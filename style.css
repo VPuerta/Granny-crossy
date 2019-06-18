@@ -1,0 +1,27 @@
+
+body {
+    text-align: center;
+    background-image: url(./Images/portada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  
+  body h1 {
+    font-size: 90px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  body button {
+    font-size: 20px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+ 
