@@ -1,11 +1,10 @@
 
 body {
-    /* display: flex; */
     text-align: center;
-    /* background-image: url(./Images/portada.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 30px;
+    margin-right: 30px;
 
   }
   
@@ -14,24 +13,41 @@ body {
     margin-bottom: 10px;
     margin-top: 10px;
     text-align: center;
+    color: darkgrey;
   }
   
   body button {
     font-size: 20px;
-    background-color: black;
+    background-color: darkgrey;
     color: #fff;
     padding: 10px 20px;
-    border: 0;
+    border: 3;
+    border-color: black;
+    border-style: double;
     box-shadow: 0;
     border-radius: 5px;
     margin-bottom: 30px;
   }
   #head-game{
-    display: block;
-    align-content: flex-end;
-    float: right;
     margin: 200px, 30px;
-    
+  }
+
+  h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
     
   }
+  
+  @keyframes slidein {
+    from {
+      margin-right: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+  
  
