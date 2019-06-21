@@ -37,15 +37,18 @@ class RoadLane extends Lane {
         this.carH = 100
         this.speed = randomInt(1, 7)
 
-        var carType = randomInt(1, 3)
+        var carType = randomInt(1, 4)
         switch (carType) {
             case 1:
                 this.carImage = carImage;
                 break;
             case 2:
-                this.carImage = carImage3;
+                this.carImage = carImage2;
                 break;
             case 3:
+                this.carImage = carImage3;
+                break;
+            case 4:
                 this.carImage = carImage4;
                 break;
         }    
@@ -63,7 +66,7 @@ class RoadLane extends Lane {
 
 createLanes = () => {
     return Array(50).fill().map((x, idx) => {
-        let laneType = randomInt(0, 2)
+        let laneType = randomInt(0, 3)
     
         if (laneType === 0) {
             return new GardenLane(idx * 197)

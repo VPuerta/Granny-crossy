@@ -151,6 +151,7 @@ class Player {
                     up: false,
                     down: true
                 }
+
                 if (this.grannyPos.y < 700- this.grannyH ){
                     this.grannyPos.y += grannySpeed;
                     this.animateGranny(this.grannyCounter)

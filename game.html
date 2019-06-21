@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="score.js"></script>
+
     <script type="text/javascript" src="obstacle.js"></script>
     <script type="text/javascript" src="player.js"></script>
     <script type="text/javascript" src="game.js"></script>
@@ -16,10 +18,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
     <title>Granny Crossing</title>
-    <iframe id="music" src="./Images/musica.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    <iframe id="music" src="./sonidos/musica.mp3" allow="autoplay" style="display:none" id="iframeAudio">
     </iframe>
     <!-- <audio id="music-2" autoplay loop id="playAudio"> -->
-        <source src="">
+        <source src="./sonidos/musica.mp3">
     </audio>
     <script id="music-3">
         var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
@@ -32,12 +34,7 @@
     </script>
     <title>Granny Crossing</title>
     <style>
-        body{
-             background-image:url("./images/star.png");
-            /* background-image:url("./images/portada.jpg"); */
-            background-size: auto;
-            background-position-x: center;
-        }
+       
     </style>
 </head>
 
@@ -49,10 +46,11 @@
             <button id="start-button">StartGame</button>
             <div id="StartGame"></div>
             <img src="./Images/abuela-enfadada.png" width="300" height="400"></img>
+            <h2> Created by VPG</h2>
         </div>
     </div>
-
     <canvas id="canvas" width="600" height="700"></canvas>
+    
 
 </body>
 
